@@ -1,0 +1,51 @@
+.whom {
+    padding: 100px 0;
+    /* background-image: url(./../../img/whom-bg.png); */
+    /* background-size: cover; */
+}
+
+.whom__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.whom__title {
+    font-size: 60px;
+    font-weight: 900;
+    padding-left: 100px;
+}
+
+.whom__map {
+}
+
+.whom__map--mobile {
+    display: none;
+    max-width: 500px;
+    align-self: center;
+}
+
+@media (max-width: 1200px) {
+    .whom {
+        min-height: 500px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    .whom__title {
+        font-size: 30px;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .whom__container {
+        row-gap: 30px;
+    }
+    .whom__map {
+        display: none;
+    }
+    .whom__map--mobile {
+        display: block;
+    }
+}

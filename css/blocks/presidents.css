@@ -1,0 +1,71 @@
+.presidents {
+    padding: 100px 0;
+    background-image: url(./../../img/presidents-bg.jpg);
+    background-size: cover;
+}
+
+.presidents__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    align-items: center;
+}
+
+.presidents__title {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.presidents__imgs {
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
+}
+
+.presidents-img__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+}
+
+.presidents-img__wrapper img {
+    display: block;
+    border-radius: 20px;
+    max-height: 400px;
+}
+
+.presidents-img__name {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.presidents-img__city {
+    border-radius: 10px;
+    border: 1px solid var(--red-color);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 1200px) {
+    .presidents__title {
+        font-size: 30px;
+    }
+    .presidents__imgs {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .presidents-img__wrapper {
+        row-gap: 20px;
+    }
+    .presidents-img__name {
+        font-size: 12px;
+    }
+    .presidents-img__city {
+        font-size: 12px;
+    }
+}

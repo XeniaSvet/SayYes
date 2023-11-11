@@ -1,0 +1,76 @@
+.union {
+    padding: 100px 0;
+    background-image: url(./../../img/union-bg.png);
+    background-size: cover;
+}
+
+.union__container {
+    display: flex;
+    align-items: center;
+}
+
+.union__title {
+    font-size: 60px;
+    font-weight: 900;
+    max-width: 50%;
+}
+
+.union__list {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.union__item {
+    display: flex;
+    column-gap: 50px;
+    padding: 10px 0;
+    align-items: center;
+    border-bottom: 1px solid #4e8f77;
+}
+
+.union__list--num {
+    font-size: 60px;
+    font-weight: 600;
+    color: #4e8f77;
+}
+
+.union__list--text {
+    font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+    .union {
+        padding: 100px 0 0;
+    }
+    .union__container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .union__title {
+        font-size: 30px;        
+        text-align: center;
+        max-width: unset;
+    }
+    .union__list {
+        max-width: unset;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .union__item {
+        border-bottom: none;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 10px;
+    }
+    .union__list--num {
+        font-size: 40px;
+        border-bottom: 1px solid #4e8f77;
+        width: 100%;
+    }    
+    .union__list--text {
+        font-size: 12px;
+    }
+}
