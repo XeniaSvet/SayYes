@@ -1,0 +1,143 @@
+.about {
+    padding: 100px 0;
+    background-image: url(./../../img/about-bg.png);
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 70px;
+}
+
+.about__info {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info__text {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    max-width: 500px;
+}
+
+.info__text--title {
+    font-size: 22px;
+    font-weight: 700;
+    max-width: 420px;
+}
+
+.info__text--title--span{
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.info__text--subtitle {
+    font-size: 20px;
+}
+
+.info__img {
+    max-width: 50%;
+}
+
+.info__img-wrapper {
+    max-width: 500px;
+}
+
+.about__cards {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.card__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 60px;
+    max-width: 545px;
+    max-height: 345px;
+    border-radius: 20px;
+    border: 1px solid var(--red-color);
+}
+
+.card__title {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.card__title--icon {
+    max-width: 70px;
+}
+
+.card__title--icon img {
+    border-radius: 8px;
+}
+
+.card__title--text {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.card__desc {
+    font-size: 20px;
+}
+
+.about__button {
+}
+
+@media (max-width: 1200px) {
+    .about {
+        padding: 0;
+    }
+    .about__container {
+        row-gap: 50px;
+    }
+    .info__text--title {
+        font-size: 16px;
+    }    
+    .info__text--title--span{
+        font-size: 30px;
+    }
+    .info__text--subtitle {
+        font-size: 12px;
+    }
+    .about__cards {
+        justify-content: center;
+    }
+    .card__wrapper {
+        padding: 20px;
+        row-gap: 20px;
+    }
+    .card__title--icon {
+        max-width: 40px;
+    }
+    .card__title--text {
+        font-size: 14px;
+    }
+    .card__desc {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about__info {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+    .info__text {
+        row-gap: 30px;
+        align-items: center;
+        text-align: center;
+    }
+    .info__img {
+        max-width: 100%;
+    }
+} 

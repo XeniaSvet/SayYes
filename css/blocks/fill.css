@@ -1,0 +1,120 @@
+.fill {
+    padding: 100px 0;
+    background-image: url(./../../img/fill-bg.png);
+    background-size: cover;
+}
+
+.fill__container {
+    display: flex;
+    column-gap: 40px;
+}
+
+.fill__left {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding-top: 100px;
+    row-gap: 50px;
+}
+
+.fill__title {
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.fill__subtitle {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.fill__right {
+    max-width: 50%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 40px 40px 40px;
+    border-radius: 20px;
+    border: 1px solid #4e8f77;
+    background-color: rgba(0, 0, 0, 0.6);
+    row-gap: 70px;
+}
+
+.form__input--wrapper {
+    position: relative;
+    margin: 0 10px;
+}
+
+
+.form__input--wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.form__input {
+}
+
+.form__button {
+    padding: 50px 35px;
+    font-size: 26px;
+    font-weight: 700;
+    max-width: 430px;
+    border-radius: 20px;
+    background: var(--red-color);
+    box-shadow: 0px 6px 0px 0px #9A1426;
+    text-align: center;
+    align-self: center;
+    width: 100%;
+}
+
+.form__policy {
+    position: relative;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+    .fill {
+        padding: 30px 0;
+    }
+    .fill__container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .fill__title {
+        font-size: 30px;
+    }
+    .fill__left {
+        max-width: unset;
+        padding-top: 0;
+        text-align: center;
+        row-gap: 30px;
+    }
+    .fill__subtitle {
+        font-size: 12px;
+    }
+    .fill__right {
+        max-width: unset;
+        display: flex;
+        justify-content: center;
+    }
+    .form {
+        padding: 50px 20px 20px 20px;
+        row-gap: 50px;
+        max-width: 500px;
+    }
+    .form__policy {
+        font-size: 12px;
+    }
+    .form__button {
+        padding: 30px 35px;
+        font-size: 12px;
+    }
+}

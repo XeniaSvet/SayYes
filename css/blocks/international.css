@@ -1,0 +1,133 @@
+.international__map {
+    background-image: url(./../../img/international-title-bg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 250px;
+}
+
+.international__map-container {
+}
+
+.international {
+    padding: 100px 0;
+    background-image: url(./../../img/international-bg.png);
+    background-size: cover;
+}
+
+.international__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+}
+
+.international__title {
+    font-size: 60px;
+    font-weight: 900;
+    max-width: 900px;
+}
+
+.international__title span {
+    color: #4e8f77;
+}
+
+.international__cards {
+    display: flex;
+    column-gap: 20px;
+}
+
+.international-card__wrapper {
+    position: relative;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 365px;
+    height: 690px;
+    border-radius: 20px;
+    border: 1px solid var(--red-color);
+    justify-content: space-between;
+}
+
+.international-card__wrapper::before {
+    content: "?";
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--red-color);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: var(--dark-color);
+}
+
+.international-card__top {
+    display: flex;
+    flex-direction: column;
+}
+
+.international-card__title {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    max-width: 240px;
+}
+
+.international-card__text {
+    font-size: 20px;
+}
+
+.international-card__author {
+    font-size: 20px;
+    text-align: end;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.international__button {
+}
+
+@media (max-width: 1200px) {
+    .international__map {
+        background-size: cover;
+    }
+    .international__map-container {
+        display: flex;
+        justify-content: center;
+    }
+    .international {
+        padding: 50px 0;
+    }
+    .international__title {
+        font-size: 20px;
+    }
+    .international__cards {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .international-card__wrapper { 
+       height: auto;
+       padding: 20px;
+    }
+    .international-card__wrapper::before {
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        top: -20px;
+    }
+    .international-card__title {
+        font-size: 16px;
+    }
+    .international-card__text {
+        font-size: 12px;
+    }
+    .international-card__author {
+        font-size: 12px;
+        padding-top: 20px;
+    }
+}

@@ -1,0 +1,129 @@
+.events {
+    padding: 80px 0;
+    background-image: url(./../../img/events-bg.png);
+    background-size: cover;
+}
+
+.events__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.events__title {
+    font-size: 60px;
+    font-weight: 900;
+    align-self: flex-start;
+}
+
+.events__imgs--main {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 25px;
+}
+
+.events__img--main--col {
+    display: flex;
+    column-gap: 25px;
+}
+
+.events__imgs--main img {
+    display: block;
+    max-height: 420px;
+}
+
+.events__table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.events-card__wrapper {
+    display: flex;
+    max-width: 399px;
+    border: 1px solid green;
+    align-items: center;
+    column-gap: 15px;
+    align-items: center;
+    padding: 10px;
+}
+
+.events-card__wrapper img {
+    width: 50px;
+    height: 50px;
+}
+
+.events-card__text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+.events-card__title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.events-card__subtitle {
+    font-size: 20px;
+}
+
+.events__imgs--footer {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.events__imgs--footer img {
+    display: block;
+    border-radius: 20px;
+}
+
+.events__imgs--footer-6 {
+    /* max-width: 500px; */
+}
+
+.events__imgs--col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.events__button {
+}
+
+@media (max-width: 1200px) {
+    .events__title {
+        font-size: 30px;
+        align-self: center;
+    }
+    .events__imgs--main {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+    }
+    .events__table {
+        display: flex;
+        flex-direction: column;
+    }
+    .events-card__title {
+        font-size: 12px;
+    }
+    .events-card__subtitle {
+        font-size: 12px;
+    }
+    .events__imgs--footer {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+    }
+    .events__imgs--col {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .events__imgs--footer-6 {
+        max-width: 500px;
+    }
+}

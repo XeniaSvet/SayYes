@@ -1,0 +1,276 @@
+.brunch {
+    padding-bottom: 50px;
+    background-image: url(./../../img/brunch/brunch-header.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.brunch__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 200px;
+}
+
+.brunch__header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-top: 350px;
+}
+
+.brunch__header-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.brunch__title {
+    font-size: 100px;
+    font-weight: 900;
+    max-width: 300px;
+    line-height: 0.9;
+}
+
+.brunch__subtitle {
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.brunch__button {}
+
+.brunch__button button {
+    font-size: 50px;
+    font-weight: 500;
+    border: 4px solid #fff;
+    padding: 10px 40px;
+}
+
+.brunch__speakers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.speakers__title {
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.speakers__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+
+    list-style-type: none;
+    font-size: 38px;
+    font-weight: 900;
+    color: var(--dark-color);
+}
+
+.speakers__list li {
+    position: relative;
+   
+}
+
+.speakers__list li::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(90deg, #BE710E 0%, #F9BA37 100%);
+    transform: skew(-30deg);
+    width: 114%;
+    height: 120%;
+    top: -10%;
+    right: -7%;
+}
+
+.brunch__location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 150px;
+}
+
+.brunch__date {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.brunch__date::before {
+    position: absolute;
+    content: "КОГДА?";
+    color: #BE710E;
+    top: -50px;
+    left: -143px;
+    font-size: 60px;
+    font-weight: 900;
+    z-index: -1;
+    filter: blur(2px);
+    opacity: 0.3;
+}
+
+.brunch__date-text {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.brunch__date-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    list-style-type: none;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.brunch__place {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.brunch__place::before {
+    position: absolute;
+    content: "ГДЕ?";
+    color: #BE710E;
+    top: -50px;
+    left: -25px;
+    font-size: 60px;
+    font-weight: 900;
+    z-index: -1;
+    filter: blur(2px);
+    opacity: 0.3;
+}
+
+.brunch__place-title {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.brunch__place-text {
+    font-size: 34px;
+    font-weight: 500;
+    max-width: 320px;
+    text-align: center;
+}
+
+.brunch__cta {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    border: 4px solid #fff;
+}
+
+.brunch__cta-title {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.brunch__cta-price {
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.brunch__cta-button {
+}
+
+.brunch__cta-button button {
+    font-size: 40px;
+    font-weight: 500;
+    border: 4px solid #fff;
+    padding: 10px 40px;
+}
+
+@media (max-width: 768px) {
+    .brunch {
+        background-image: url(./../../img/brunch/brunch-header-small.png);
+    }
+    .brunch__container {
+        row-gap: 80px;
+    }
+    .brunch__header {
+        align-items: center;
+        padding-top: 50%;
+    }
+    .brunch__header-text {
+        align-items: center;
+        text-align: center;
+    }
+    .brunch__title {
+        font-size: 50px;
+        text-align: center;
+    }
+    .brunch__button button {
+        font-size: 20px;
+    }
+    .speakers__title {
+        font-size: 16px;
+    }
+    .brunch__subtitle {
+        font-size: 18px;
+    }
+    
+    .speakers__list {
+        font-size: 18px;
+        row-gap: 15px;
+    }
+    .brunch__location {
+        row-gap: 50px;
+    }
+    .brunch__date {
+        row-gap: 20px;
+    }
+    .brunch__date::before {
+        top: -20px;
+        left: -50px;
+        font-size: 30px;
+    }
+    .brunch__date-text {
+        font-size: 26px;
+    }
+    .brunch__date-list {
+        font-size: 20px;
+    }
+    .brunch__place {
+        row-gap: 20px;
+    }
+    .brunch__place::before {
+        top: -20px;
+        left: 15px;
+        font-size: 30px;
+    }
+    .brunch__place-title {
+        font-size: 26px;
+        text-align: center;
+    }
+    .brunch__place-text {
+        font-size: 20px;
+    }
+    .brunch__cta {
+        padding: 20px;
+        row-gap: 10px;
+        border: 1px solid #fff;
+    }
+    .brunch__cta-title {
+        font-size: 20px;
+    }
+    .brunch__cta-price {
+        font-size: 20px;
+    }
+    .brunch__cta-button button {
+        font-size: 20px;
+        padding: 10px 5px;
+        border: 1px solid #fff;
+    }
+}
