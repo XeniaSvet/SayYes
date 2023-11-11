@@ -1,0 +1,22 @@
+@import "./blocks/reset.css";
+@import "./blocks/base.css";
+
+@import "./blocks/header.css";
+@import "./blocks/about.css";
+@import "./blocks/events.css";
+@import "./blocks/union.css";
+@import "./blocks/whom.css";
+@import "./blocks/international.css";
+@import "./blocks/leader.css";
+@import "./blocks/mentors.css";
+@import "./blocks/online.css";
+@import "./blocks/fill.css";
+@import "./blocks/presidents.css";
+@import "./blocks/experts.css";
+@import "./blocks/footer.css";
+@import "./blocks/offer.css";
+@import "./blocks/policy.css";
+@import "./blocks/popup.css";
+@import "./blocks/menu-burger.css";
+@import "./blocks/brunch.css";
+@import "./blocks/cart.css";
